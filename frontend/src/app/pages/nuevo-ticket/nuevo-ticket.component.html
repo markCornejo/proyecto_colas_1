@@ -1,0 +1,24 @@
+<table>
+    <tr>
+        <td>
+            <span id="lblNuevoTicket" *ngIf="!cod">
+              Cargando...
+            </span>
+            <span id="lblNuevoTicket" *ngIf="cod">
+              <span>
+                Codigo: {{cod}}
+              </span>
+            <span>
+                Escritorio: {{escritorio}}
+              </span>
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="btn btn-secondary btn-lg" (click)="generar()">
+              Generar nuevo ticket
+          </button>
+        </td>
+    </tr>
+</table>

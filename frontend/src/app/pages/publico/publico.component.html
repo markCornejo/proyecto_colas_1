@@ -1,0 +1,54 @@
+<table>
+    <tr>
+        <td valign="middle" class="ticket-actual" *ngIf="atepublicos[0]">
+            <span id="lblTicket1" class="ticket-actual-numero">Ticket {{ atepublicos[0].cod }}</span>
+            <br>
+            <span id="lblEscritorio1" class="ticket-actual-escritorio">Escritorio {{ atepublicos[0].escritorio }}</span>
+        </td>
+        <td valign="middle" class="ticket-actual" *ngIf="!atepublicos[0]">
+            <span id="lblTicket1" class="ticket-actual-numero">Lugar</span>
+            <br>
+            <span id="lblEscritorio1" class="ticket-actual-escritorio">Vacio</span>
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <td *ngIf="atepublicos[1]">
+                        <span id="lblTicket2" class="ticket-secundario">Ticket {{ atepublicos[1].cod }}</span>
+                        <br>
+                        <span id="lblEscritorio2">Escritorio {{ atepublicos[1].escritorio }}</span>
+                    </td>
+                    <td *ngIf="!atepublicos[1]">
+                        <span id="lblTicket2" class="ticket-secundario">Lugar</span>
+                        <br>
+                        <span id="lblEscritorio2">Vacio</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td *ngIf="atepublicos[2]">
+                        <span id="lblTicket3" class="ticket-secundario">Ticket {{ atepublicos[2].cod }}</span>
+                        <br>
+                        <span id="lblEscritorio3">Escritorio {{ atepublicos[2].escritorio }}</span>
+                    </td>
+                    <td *ngIf="!atepublicos[2]">
+                        <span id="lblTicket3" class="ticket-secundario">Lugar</span>
+                        <br>
+                        <span id="lblEscritorio3">Vacio</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td *ngIf="atepublicos[3]">
+                        <span id="lblTicket4" class="ticket-secundario">Ticket {{ atepublicos[3].cod }}</span>
+                        <br>
+                        <span id="lblEscritorio4">Escritorio {{ atepublicos[3].escritorio }}</span>
+                    </td>
+                    <td *ngIf="!atepublicos[3]">
+                        <span id="lblTicket4" class="ticket-secundario">Lugar</span>
+                        <br>
+                        <span id="lblEscritorio4">Vacio</span>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,10 @@
+<h1>
+    Escritorio
+    <span *ngIf="escritorio">{{escritorio}}</span>
+</h1>
+<h4>Atendiendo a <small *ngIf="!cod">....</small> <small *ngIf="cod"> codigo: {{cod}}</small></h4>
+<hr>
+
+<button class="btn btn-primary btn-lg" (click)="atender()">
+    Atender siguiente ticket
+</button>
